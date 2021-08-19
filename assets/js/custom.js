@@ -1148,12 +1148,12 @@
   const CLASS_NAME_NEXT = 'bs-carousel-item-next';
   const CLASS_NAME_PREV = 'bs-carousel-item-prev';
   const CLASS_NAME_POINTER_EVENT = 'bs-pointer-event';
-  const SELECTOR_ACTIVE$1 = '.bs-active';
-  const SELECTOR_ACTIVE_ITEM = '.bs-active.bs-carousel-item';
-  const SELECTOR_ITEM = '.bs-carousel-item';
-  const SELECTOR_ITEM_IMG = '.bs-carousel-item img';
-  const SELECTOR_NEXT_PREV = '.bs-carousel-item-next, .bs-carousel-item-prev';
-  const SELECTOR_INDICATORS = '.bs-carousel-indicators';
+  const SELECTOR_ACTIVE$1 = '.active';
+  const SELECTOR_ACTIVE_ITEM = '.active.carousel-item';
+  const SELECTOR_ITEM = '.carousel-item';
+  const SELECTOR_ITEM_IMG = '.carousel-item img';
+  const SELECTOR_NEXT_PREV = '.carousel-item-next, .carousel-item-prev';
+  const SELECTOR_INDICATORS = '.carousel-indicators';
   const SELECTOR_INDICATOR = '[data-bs-target]';
   const SELECTOR_DATA_SLIDE = '[data-bs-slide], [data-bs-slide-to]';
   const SELECTOR_DATA_RIDE = '[data-bs-ride="carousel"]';
@@ -1659,11 +1659,11 @@
   const EVENT_HIDE$5 = `hide${EVENT_KEY$9}`;
   const EVENT_HIDDEN$5 = `hidden${EVENT_KEY$9}`;
   const EVENT_CLICK_DATA_API$4 = `click${EVENT_KEY$9}${DATA_API_KEY$5}`;
-  const CLASS_NAME_SHOW$7 = 'show';
-  const CLASS_NAME_COLLAPSE = 'collapse';
-  const CLASS_NAME_COLLAPSING = 'collapsing';
-  const CLASS_NAME_COLLAPSED = 'collapsed';
-  const CLASS_NAME_HORIZONTAL = 'collapse-horizontal';
+  const CLASS_NAME_SHOW$7 = 'bs-show';
+  const CLASS_NAME_COLLAPSE = 'bs-collapse';
+  const CLASS_NAME_COLLAPSING = 'bs-collapsing';
+  const CLASS_NAME_COLLAPSED = 'bs-collapsed';
+  const CLASS_NAME_HORIZONTAL = 'bs-collapse-horizontal';
   const WIDTH = 'width';
   const HEIGHT = 'height';
   const SELECTOR_ACTIVES = '.show, .collapsing';
@@ -1987,7 +1987,7 @@
   const CLASS_NAME_NAVBAR = 'bs-navbar';
   const SELECTOR_DATA_TOGGLE$3 = '[data-bs-toggle="dropdown"]';
   const SELECTOR_MENU = '.dropdown-menu';
-  const SELECTOR_NAVBAR_NAV = '.bs-navbar-nav';
+  const SELECTOR_NAVBAR_NAV = '.navbar-nav';
   const SELECTOR_VISIBLE_ITEMS = '.dropdown-menu .dropdown-item:not(.disabled):not(:disabled)';
   const PLACEMENT_TOP = isRTL() ? 'top-end' : 'top-start';
   const PLACEMENT_TOPEND = isRTL() ? 'top-start' : 'top-end';
@@ -2788,8 +2788,8 @@
   const CLASS_NAME_FADE$3 = 'bs-fade';
   const CLASS_NAME_SHOW$4 = 'bs-show';
   const CLASS_NAME_STATIC = 'bs-modal-static';
-  const SELECTOR_DIALOG = '.bs-modal-dialog';
-  const SELECTOR_MODAL_BODY = '.bs-modal-body';
+  const SELECTOR_DIALOG = '.modal-dialog';
+  const SELECTOR_MODAL_BODY = '.modal-body';
   const SELECTOR_DATA_TOGGLE$2 = '[data-bs-toggle="modal"]';
   /**
    * ------------------------------------------------------------------------
@@ -3198,7 +3198,7 @@
   };
   const CLASS_NAME_SHOW$3 = 'bs-show';
   const CLASS_NAME_BACKDROP = 'bs-offcanvas-backdrop';
-  const OPEN_SELECTOR = '.bs-offcanvas.bs-show';
+  const OPEN_SELECTOR = '.offcanvas.show';
   const EVENT_SHOW$2 = `show${EVENT_KEY$5}`;
   const EVENT_SHOWN$2 = `shown${EVENT_KEY$5}`;
   const EVENT_HIDE$2 = `hide${EVENT_KEY$5}`;
@@ -3615,7 +3615,7 @@
   const CLASS_NAME_FADE$2 = 'bs-fade';
   const CLASS_NAME_MODAL = 'bs-modal';
   const CLASS_NAME_SHOW$2 = 'bs-show';
-  const HOVER_STATE_SHOW = 'bs-show';
+  const HOVER_STATE_SHOW = 'show';
   const HOVER_STATE_OUT = 'out';
   const SELECTOR_TOOLTIP_INNER = '.tooltip-inner';
   const SELECTOR_MODAL = `.${CLASS_NAME_MODAL}`;
@@ -4613,13 +4613,13 @@
   const CLASS_NAME_ACTIVE = 'bs-active';
   const CLASS_NAME_FADE$1 = 'bs-fade';
   const CLASS_NAME_SHOW$1 = 'bs-show';
-  const SELECTOR_DROPDOWN = '.bs-dropdown';
-  const SELECTOR_NAV_LIST_GROUP = '.bs-nav, .bs-list-group';
-  const SELECTOR_ACTIVE = '.bs-active';
-  const SELECTOR_ACTIVE_UL = ':scope > li > .bs-active';
+  const SELECTOR_DROPDOWN = '.dropdown';
+  const SELECTOR_NAV_LIST_GROUP = '.nav, .list-group';
+  const SELECTOR_ACTIVE = '.active';
+  const SELECTOR_ACTIVE_UL = ':scope > li > .active';
   const SELECTOR_DATA_TOGGLE = '[data-bs-toggle="tab"], [data-bs-toggle="pill"], [data-bs-toggle="list"]';
-  const SELECTOR_DROPDOWN_TOGGLE = '.bs-dropdown-toggle';
-  const SELECTOR_DROPDOWN_ACTIVE_CHILD = ':scope > .bs-dropdown-menu .active';
+  const SELECTOR_DROPDOWN_TOGGLE = '.dropdown-toggle';
+  const SELECTOR_DROPDOWN_ACTIVE_CHILD = ':scope > .dropdown-menu .active';
   /**
    * ------------------------------------------------------------------------
    * Class Definition
