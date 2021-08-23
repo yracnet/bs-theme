@@ -1,0 +1,97 @@
+// scss-docs-start gray-color-variables
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+// scss-docs-start color-variables
+$blue: #0d6efd !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #d63384 !default;
+$red: #dc3545 !default;
+$orange: #ff8d6d !default;
+$yellow: #ffc107 !default;
+$green: #01a982 !default;
+$teal: #20c997 !default;
+$cyan: #94e8e4 !default;
+
+// scss-docs-end color-variables
+
+//// scss-docs-start colors-map
+//$colors: (
+//    "blue": $blue,
+//    "indigo": $indigo,
+//    "purple": $purple,
+//    "pink": $pink,
+//    "red": $red,
+//    "orange": $orange,
+//    "yellow": $yellow,
+//    "green": $green,
+//    "teal": $teal,
+//    "cyan": $cyan,
+//    "white": $white,
+//    "gray": $gray-600,
+//    "gray-dark": $gray-800,
+//) !default;
+//// scss-docs-end colors-map
+
+// scss-docs-start theme-color-variables
+$primary: $blue !default;
+$secondary: $gray-600 !default;
+$success: $green !default;
+$info: $cyan !default;
+$warning: $yellow !default;
+$danger: $red !default;
+$light: $gray-100 !default;
+$dark: #425563 !default;
+// scss-docs-end theme-color-variables
+
+//// scss-docs-start theme-colors-map
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "green": $green,
+    "orange": $orange,
+    "dark": $dark,
+) !default;
+
+//BS 5
+//SM  @media (min-width: 576px) {
+//MD  @media (min-width: 768px) {
+//LG  @media (min-width: 992px) {
+//XL  @media (min-width: 1200px) {
+//XXL @media (min-width: 1400px) {
+//PHE
+//SM @media (min-width:768px)
+//MD @media (min-width:992px) {
+//LG @media (min-width:1200px) {
+//XL @media (min-width:1600px) {
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 768px,
+    md: 992px,
+    lg: 1200px,
+    xl: 1600px,
+) !default;
+
+$container-max-widths: (
+    sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1140px,
+    xxl: 1320px,
+) !default;

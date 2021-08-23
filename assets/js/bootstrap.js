@@ -5,9 +5,10 @@
   */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core')) :
-  typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
-}(this, (function (Popper) { 'use strict';
+    typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
+      (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
+}(this, (function (Popper) {
+  'use strict';
 
   function _interopNamespace(e) {
     if (e && e.__esModule) return e;
@@ -213,7 +214,7 @@
     return findShadowRoot(element.parentNode);
   };
 
-  const noop = () => {};
+  const noop = () => { };
   /**
    * Trick to restart an element's animation
    *
@@ -794,8 +795,8 @@
   const EVENT_KEY$c = `.${DATA_KEY$c}`;
   const EVENT_CLOSE = `close${EVENT_KEY$c}`;
   const EVENT_CLOSED = `closed${EVENT_KEY$c}`;
-  const CLASS_NAME_FADE$5 = 'fade';
-  const CLASS_NAME_SHOW$8 = 'show';
+  const CLASS_NAME_FADE$5 = 'bs-fade';
+  const CLASS_NAME_SHOW$8 = 'bs-show';
   /**
    * ------------------------------------------------------------------------
    * Class Definition
@@ -882,7 +883,7 @@
   const DATA_KEY$b = 'bs.button';
   const EVENT_KEY$b = `.${DATA_KEY$b}`;
   const DATA_API_KEY$7 = '.data-api';
-  const CLASS_NAME_ACTIVE$3 = 'active';
+  const CLASS_NAME_ACTIVE$3 = 'bs-active';
   const SELECTOR_DATA_TOGGLE$5 = '[data-bs-toggle="button"]';
   const EVENT_CLICK_DATA_API$6 = `click${EVENT_KEY$b}${DATA_API_KEY$7}`;
   /**
@@ -1139,14 +1140,14 @@
   const EVENT_DRAG_START = `dragstart${EVENT_KEY$a}`;
   const EVENT_LOAD_DATA_API$2 = `load${EVENT_KEY$a}${DATA_API_KEY$6}`;
   const EVENT_CLICK_DATA_API$5 = `click${EVENT_KEY$a}${DATA_API_KEY$6}`;
-  const CLASS_NAME_CAROUSEL = 'carousel';
-  const CLASS_NAME_ACTIVE$2 = 'active';
-  const CLASS_NAME_SLIDE = 'slide';
-  const CLASS_NAME_END = 'carousel-item-end';
-  const CLASS_NAME_START = 'carousel-item-start';
-  const CLASS_NAME_NEXT = 'carousel-item-next';
-  const CLASS_NAME_PREV = 'carousel-item-prev';
-  const CLASS_NAME_POINTER_EVENT = 'pointer-event';
+  const CLASS_NAME_CAROUSEL = 'bs-carousel';
+  const CLASS_NAME_ACTIVE$2 = 'bs-active';
+  const CLASS_NAME_SLIDE = 'bs-slide';
+  const CLASS_NAME_END = 'bs-carousel-item-end';
+  const CLASS_NAME_START = 'bs-carousel-item-start';
+  const CLASS_NAME_NEXT = 'bs-carousel-item-next';
+  const CLASS_NAME_PREV = 'bs-carousel-item-prev';
+  const CLASS_NAME_POINTER_EVENT = 'bs-pointer-event';
   const SELECTOR_ACTIVE$1 = '.active';
   const SELECTOR_ACTIVE_ITEM = '.active.carousel-item';
   const SELECTOR_ITEM = '.carousel-item';
@@ -1267,7 +1268,8 @@
 
 
     _getConfig(config) {
-      config = { ...Default$a,
+      config = {
+        ...Default$a,
         ...Manipulator.getDataAttributes(this._element),
         ...(typeof config === 'object' ? config : {})
       };
@@ -1549,7 +1551,8 @@
       } = data;
 
       if (typeof config === 'object') {
-        _config = { ..._config,
+        _config = {
+          ..._config,
           ...config
         };
       }
@@ -1583,7 +1586,8 @@
         return;
       }
 
-      const config = { ...Manipulator.getDataAttributes(target),
+      const config = {
+        ...Manipulator.getDataAttributes(target),
         ...Manipulator.getDataAttributes(this)
       };
       const slideIndex = this.getAttribute('data-bs-slide-to');
@@ -1655,11 +1659,11 @@
   const EVENT_HIDE$5 = `hide${EVENT_KEY$9}`;
   const EVENT_HIDDEN$5 = `hidden${EVENT_KEY$9}`;
   const EVENT_CLICK_DATA_API$4 = `click${EVENT_KEY$9}${DATA_API_KEY$5}`;
-  const CLASS_NAME_SHOW$7 = 'show';
-  const CLASS_NAME_COLLAPSE = 'collapse';
-  const CLASS_NAME_COLLAPSING = 'collapsing';
-  const CLASS_NAME_COLLAPSED = 'collapsed';
-  const CLASS_NAME_HORIZONTAL = 'collapse-horizontal';
+  const CLASS_NAME_SHOW$7 = 'bs-show';
+  const CLASS_NAME_COLLAPSE = 'bs-collapse';
+  const CLASS_NAME_COLLAPSING = 'bs-collapsing';
+  const CLASS_NAME_COLLAPSED = 'bs-collapsed';
+  const CLASS_NAME_HORIZONTAL = 'bs-collapse-horizontal';
   const WIDTH = 'width';
   const HEIGHT = 'height';
   const SELECTOR_ACTIVES = '.show, .collapsing';
@@ -1846,7 +1850,8 @@
 
 
     _getConfig(config) {
-      config = { ...Default$9,
+      config = {
+        ...Default$9,
         ...Manipulator.getDataAttributes(this._element),
         ...config
       };
@@ -1975,11 +1980,11 @@
   const EVENT_CLICK_DATA_API$3 = `click${EVENT_KEY$8}${DATA_API_KEY$4}`;
   const EVENT_KEYDOWN_DATA_API = `keydown${EVENT_KEY$8}${DATA_API_KEY$4}`;
   const EVENT_KEYUP_DATA_API = `keyup${EVENT_KEY$8}${DATA_API_KEY$4}`;
-  const CLASS_NAME_SHOW$6 = 'show';
-  const CLASS_NAME_DROPUP = 'dropup';
-  const CLASS_NAME_DROPEND = 'dropend';
-  const CLASS_NAME_DROPSTART = 'dropstart';
-  const CLASS_NAME_NAVBAR = 'navbar';
+  const CLASS_NAME_SHOW$6 = 'bs-show';
+  const CLASS_NAME_DROPUP = 'bs-dropup';
+  const CLASS_NAME_DROPEND = 'bs-dropend';
+  const CLASS_NAME_DROPSTART = 'bs-dropstart';
+  const CLASS_NAME_NAVBAR = 'bs-navbar';
   const SELECTOR_DATA_TOGGLE$3 = '[data-bs-toggle="dropdown"]';
   const SELECTOR_MENU = '.dropdown-menu';
   const SELECTOR_NAVBAR_NAV = '.navbar-nav';
@@ -2137,7 +2142,8 @@
     }
 
     _getConfig(config) {
-      config = { ...this.constructor.Default,
+      config = {
+        ...this.constructor.Default,
         ...Manipulator.getDataAttributes(this._element),
         ...config
       };
@@ -2248,7 +2254,8 @@
         }];
       }
 
-      return { ...defaultBsPopperConfig,
+      return {
+        ...defaultBsPopperConfig,
         ...(typeof this._config.popperConfig === 'function' ? this._config.popperConfig(defaultBsPopperConfig) : this._config.popperConfig)
       };
     }
@@ -2533,8 +2540,8 @@
     clickCallback: '(function|null)'
   };
   const NAME$8 = 'backdrop';
-  const CLASS_NAME_FADE$4 = 'fade';
-  const CLASS_NAME_SHOW$5 = 'show';
+  const CLASS_NAME_FADE$4 = 'bs-fade';
+  const CLASS_NAME_SHOW$5 = 'bs-show';
   const EVENT_MOUSEDOWN = `mousedown.bs.${NAME$8}`;
 
   class Backdrop {
@@ -2594,7 +2601,8 @@
     }
 
     _getConfig(config) {
-      config = { ...Default$7,
+      config = {
+        ...Default$7,
         ...(typeof config === 'object' ? config : {})
       }; // use getElement() with the default "body" to get a fresh Element on each instantiation
 
@@ -2728,7 +2736,8 @@
     }
 
     _getConfig(config) {
-      config = { ...Default$6,
+      config = {
+        ...Default$6,
         ...(typeof config === 'object' ? config : {})
       };
       typeCheckConfig(NAME$7, config, DefaultType$6);
@@ -2775,10 +2784,10 @@
   const EVENT_MOUSEUP_DISMISS = `mouseup.dismiss${EVENT_KEY$6}`;
   const EVENT_MOUSEDOWN_DISMISS = `mousedown.dismiss${EVENT_KEY$6}`;
   const EVENT_CLICK_DATA_API$2 = `click${EVENT_KEY$6}${DATA_API_KEY$3}`;
-  const CLASS_NAME_OPEN = 'modal-open';
-  const CLASS_NAME_FADE$3 = 'fade';
-  const CLASS_NAME_SHOW$4 = 'show';
-  const CLASS_NAME_STATIC = 'modal-static';
+  const CLASS_NAME_OPEN = 'bs-modal-open';
+  const CLASS_NAME_FADE$3 = 'bs-fade';
+  const CLASS_NAME_SHOW$4 = 'bs-show';
+  const CLASS_NAME_STATIC = 'bs-modal-static';
   const SELECTOR_DIALOG = '.modal-dialog';
   const SELECTOR_MODAL_BODY = '.modal-body';
   const SELECTOR_DATA_TOGGLE$2 = '[data-bs-toggle="modal"]';
@@ -2918,7 +2927,8 @@
     }
 
     _getConfig(config) {
-      config = { ...Default$5,
+      config = {
+        ...Default$5,
         ...Manipulator.getDataAttributes(this._element),
         ...(typeof config === 'object' ? config : {})
       };
@@ -3186,8 +3196,8 @@
     keyboard: 'boolean',
     scroll: 'boolean'
   };
-  const CLASS_NAME_SHOW$3 = 'show';
-  const CLASS_NAME_BACKDROP = 'offcanvas-backdrop';
+  const CLASS_NAME_SHOW$3 = 'bs-show';
+  const CLASS_NAME_BACKDROP = 'bs-offcanvas-backdrop';
   const OPEN_SELECTOR = '.offcanvas.show';
   const EVENT_SHOW$2 = `show${EVENT_KEY$5}`;
   const EVENT_SHOWN$2 = `shown${EVENT_KEY$5}`;
@@ -3320,7 +3330,8 @@
 
 
     _getConfig(config) {
-      config = { ...Default$4,
+      config = {
+        ...Default$4,
         ...Manipulator.getDataAttributes(this._element),
         ...(typeof config === 'object' ? config : {})
       };
@@ -3601,9 +3612,9 @@
     MOUSEENTER: `mouseenter${EVENT_KEY$4}`,
     MOUSELEAVE: `mouseleave${EVENT_KEY$4}`
   };
-  const CLASS_NAME_FADE$2 = 'fade';
-  const CLASS_NAME_MODAL = 'modal';
-  const CLASS_NAME_SHOW$2 = 'show';
+  const CLASS_NAME_FADE$2 = 'bs-fade';
+  const CLASS_NAME_MODAL = 'bs-modal';
+  const CLASS_NAME_SHOW$2 = 'bs-show';
   const HOVER_STATE_SHOW = 'show';
   const HOVER_STATE_OUT = 'out';
   const SELECTOR_TOOLTIP_INNER = '.tooltip-inner';
@@ -3994,7 +4005,8 @@
           }
         }
       };
-      return { ...defaultBsPopperConfig,
+      return {
+        ...defaultBsPopperConfig,
         ...(typeof this._config.popperConfig === 'function' ? this._config.popperConfig(defaultBsPopperConfig) : this._config.popperConfig)
       };
     }
@@ -4030,7 +4042,8 @@
       EventHandler.on(this._element.closest(SELECTOR_MODAL), EVENT_MODAL_HIDE, this._hideModalHandler);
 
       if (this._config.selector) {
-        this._config = { ...this._config,
+        this._config = {
+          ...this._config,
           trigger: 'manual',
           selector: ''
         };
@@ -4125,7 +4138,8 @@
           delete dataAttributes[dataAttr];
         }
       });
-      config = { ...this.constructor.Default,
+      config = {
+        ...this.constructor.Default,
         ...dataAttributes,
         ...(typeof config === 'object' && config ? config : {})
       };
@@ -4242,14 +4256,16 @@
   const DATA_KEY$3 = 'bs.popover';
   const EVENT_KEY$3 = `.${DATA_KEY$3}`;
   const CLASS_PREFIX = 'bs-popover';
-  const Default$2 = { ...Tooltip.Default,
+  const Default$2 = {
+    ...Tooltip.Default,
     placement: 'right',
     offset: [0, 8],
     trigger: 'click',
     content: '',
     template: '<div class="popover" role="tooltip">' + '<div class="popover-arrow"></div>' + '<h3 class="popover-header"></h3>' + '<div class="popover-body"></div>' + '</div>'
   };
-  const DefaultType$2 = { ...Tooltip.DefaultType,
+  const DefaultType$2 = {
+    ...Tooltip.DefaultType,
     content: '(string|element|function)'
   };
   const Event$1 = {
@@ -4365,8 +4381,8 @@
   const EVENT_ACTIVATE = `activate${EVENT_KEY$2}`;
   const EVENT_SCROLL = `scroll${EVENT_KEY$2}`;
   const EVENT_LOAD_DATA_API = `load${EVENT_KEY$2}${DATA_API_KEY$1}`;
-  const CLASS_NAME_DROPDOWN_ITEM = 'dropdown-item';
-  const CLASS_NAME_ACTIVE$1 = 'active';
+  const CLASS_NAME_DROPDOWN_ITEM = 'bs-dropdown-item';
+  const CLASS_NAME_ACTIVE$1 = 'bs-active';
   const SELECTOR_DATA_SPY = '[data-bs-spy="scroll"]';
   const SELECTOR_NAV_LIST_GROUP$1 = '.nav, .list-group';
   const SELECTOR_NAV_LINKS = '.nav-link';
@@ -4443,7 +4459,8 @@
 
 
     _getConfig(config) {
-      config = { ...Default$1,
+      config = {
+        ...Default$1,
         ...Manipulator.getDataAttributes(this._element),
         ...(typeof config === 'object' && config ? config : {})
       };
@@ -4592,10 +4609,10 @@
   const EVENT_SHOW$1 = `show${EVENT_KEY$1}`;
   const EVENT_SHOWN$1 = `shown${EVENT_KEY$1}`;
   const EVENT_CLICK_DATA_API = `click${EVENT_KEY$1}${DATA_API_KEY}`;
-  const CLASS_NAME_DROPDOWN_MENU = 'dropdown-menu';
-  const CLASS_NAME_ACTIVE = 'active';
-  const CLASS_NAME_FADE$1 = 'fade';
-  const CLASS_NAME_SHOW$1 = 'show';
+  const CLASS_NAME_DROPDOWN_MENU = 'bs-dropdown-menu';
+  const CLASS_NAME_ACTIVE = 'bs-active';
+  const CLASS_NAME_FADE$1 = 'bs-fade';
+  const CLASS_NAME_SHOW$1 = 'bs-show';
   const SELECTOR_DROPDOWN = '.dropdown';
   const SELECTOR_NAV_LIST_GROUP = '.nav, .list-group';
   const SELECTOR_ACTIVE = '.active';
@@ -4792,11 +4809,11 @@
   const EVENT_HIDDEN = `hidden${EVENT_KEY}`;
   const EVENT_SHOW = `show${EVENT_KEY}`;
   const EVENT_SHOWN = `shown${EVENT_KEY}`;
-  const CLASS_NAME_FADE = 'fade';
-  const CLASS_NAME_HIDE = 'hide'; // @deprecated - kept here only for backwards compatibility
+  const CLASS_NAME_FADE = 'bs-fade';
+  const CLASS_NAME_HIDE = 'bs-hide'; // @deprecated - kept here only for backwards compatibility
 
-  const CLASS_NAME_SHOW = 'show';
-  const CLASS_NAME_SHOWING = 'showing';
+  const CLASS_NAME_SHOW = 'bs-show';
+  const CLASS_NAME_SHOWING = 'bs-showing';
   const DefaultType = {
     animation: 'boolean',
     autohide: 'boolean',
@@ -4910,7 +4927,8 @@
 
 
     _getConfig(config) {
-      config = { ...Default,
+      config = {
+        ...Default,
         ...Manipulator.getDataAttributes(this._element),
         ...(typeof config === 'object' && config ? config : {})
       };
